@@ -5,12 +5,12 @@ on:
 
 jobs:
   call-workflow:
-    uses: cschleiden/cschleiden-called/.github/workflows/called.yaml@main
+    uses: cschleiden/cschleiden-called/.github/workflows/called.yml@main
     with:
       name: 'monalisa'
       
   call-workflow2:
-    uses: cschleiden/cschleiden-called/.github/workflows/called.yaml@main
+    uses: cschleiden/cschleiden-called/.github/workflows/called.yml@main
     with:
       name: 'cschleiden'
 
