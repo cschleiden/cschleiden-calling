@@ -1,0 +1,21 @@
+name: Call a reusable workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  call-workflow:
+    uses: cschleiden/cschleiden-called/.github/workflows/called.yaml@main
+    with:
+      name: 'monalisa'
+      
+  call-workflow2:
+    uses: cschleiden/cschleiden-called/.github/workflows/called.yaml@main
+    with:
+      name: 'cschleiden'
+
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo 'world'
+
